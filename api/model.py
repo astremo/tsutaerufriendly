@@ -20,8 +20,10 @@ class friendly_JA():
 
     def translate(self, text:str):
         t_output = self.query({"inputs": f"{text}"})
-        if (t_output[0].get("generated_text") is not None):
+        try:
             return t_output[0].get("generated_text")
+        except:
+            return ""
 
     # Exceeds heroku runtime memory
 
