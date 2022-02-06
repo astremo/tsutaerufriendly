@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>伝えるフレンドリー an app by astremo</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='/request_translate.js') }}"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2>伝えるフレンドリー</h2>
+            </a>
+
+            <a class="navbar-brand" href="https://github.com/astremo">
+                <button type="button" class="btn btn-secondary">
+                    <img src="{{ url_for('static', path='/resources/github.png') }}" width=20 alt="">GitHub</button>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="form">
+        <div class="what">
+        <img src="{{ url_for('static', path='/resources/circle_main.png') }}" class="circlemain"/ alt="" 
+        width=50%>
+        <img src="{{ url_for('static', path='/resources/logo.png') }}" class="friendly" alt="" 
+        width=12.5%/>
+        
+        <p class ="description">
+            伝えるフレンドリーは難しい日本語を
+            フレンドリーな日本語に翻訳します😊
+            特に漢語に困っている人たちを考慮して、
+            漢語をカタカナ語に言い換えてくれます。
+            </p>
+
+        </div> <a href="https://www.google.com/search?q=diversity">
+        <img src="{{ url_for('static', path='/resources/diverse_people.png') }}" class="diversepeople" title="ダイバーシティーをサポートします" alt="ダイバーシティーをサポートします" 
+        width=22%/></a>
+
+        <div class="translateform">
+        <h2 class="trytranslate">翻訳を試す</h2>
+
+        <form action="/translate" method="get"></form>
+        <p>
+        <textarea rows="5" maxlength="256" class="form-control form-rounded"
+        id="translate">{{text_output}}</textarea>
+        </p>
+        <div class ="translatebtn">
+        <button type="button" onClick="getRequest()" class="btn btn-primary">翻訳</button>
+        <button type="button" class="btn btn-secondary">ウェブサイト翻訳</button>
+        </div>
+        </div>
+    </form>
+    </div>
+
+    
+    <div class="principles">
+        <h2 class="principlestitle">我々のミッション</h2>
+
+        <img src="{{ url_for('static', path='/resources/circle_facilitate.png') }}" class="circlefacilitate" alt="" 
+        width=25%/>
+
+        <img src="{{ url_for('static', path='/resources/circle_global.png') }}" class="circleglobal" alt="" 
+        width=25%/>
+
+        <img src="{{ url_for('static', path='/resources/circle_communication.png') }}" class="circlecommunication" alt="" 
+        width=25%/>
+
+        <p class ="circlefacilitatedescription">
+            重要なサービスへのアクセスを容易にします
+        </p>
+        <p class ="circleglobaldescription">
+            世界中で標準化されている言葉を優先し、グローバル化を招きます
+        </p>
+        <p class ="circlecommunicationdescription">
+            共通の言葉で異文化にアプローチし、コミュニケーションを支援します
+        </p>
+
+        </div>
+
+        <nav class="navbar navbar-light bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h6>伝えるフレンドリー © 2022 Amilcare Astremo</h6>
+                </a>
+    
+            </div>
+        </nav>
+        
+</body>
+
+</html>

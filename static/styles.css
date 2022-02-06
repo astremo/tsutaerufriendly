@@ -1,0 +1,260 @@
+.circlemain
+{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.friendly
+{
+  position: absolute;
+  top: 10%;
+  left: 2.8%;
+}
+
+
+.description
+{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 1.8vw;  
+    font-weight: 600;
+    color: #42417E;
+    max-width: 25%;
+}
+
+
+.diversepeople
+{
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+}
+
+textarea
+{
+    position: relative;
+    top: 30px;
+    left: 10%; 
+    font-size: 1.8vw !important; 
+    max-width:80%;
+    max-height:40%;
+    resize: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:4px solid #8ad3d3 !important;
+  }
+
+.trytranslate
+{
+    position: relative;
+    max-width: 80%;
+    top: 5%;
+    left: 10%; 
+}
+
+.translatebtn
+{
+    position: relative;
+    max-width: 80%;
+    top: 10%;
+    left: 10%; 
+}
+
+.form
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    max-height: 50%;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.what
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    padding-bottom: 60px;
+}
+
+.translateform
+{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.principles
+{
+    height: 60vw;
+    overflow: scroll;
+}
+
+.principles .principlestitle
+{
+    position: relative;
+    top: 5%;
+    left: 2%; 
+    max-width: 80%;
+}
+
+.principles p
+{
+    position: relative;
+    left: 0;
+    top: 70%;
+    outline-color: transparent !important;
+    outline-style: none !important;
+    display: inline-block;
+    line-height: 140%;
+    vertical-align: top;
+}
+
+.circlefacilitate
+{
+  position: relative;
+  top: 70px;
+  left: 5%;
+}
+
+.principles .circlefacilitatedescription
+{
+    position: relative;
+    top: 90px;
+    left: 5%;
+    font-size: 2.0vw;  
+    font-weight: 600;
+    color: #42417E;
+    max-width: 25%;
+}
+
+.circleglobal
+{
+  position: relative;
+  top: 70px;
+  left: 10%;
+}
+
+.principles .circleglobaldescription
+{
+  position: relative;
+  top: 90px;
+  left: 10%;
+  font-size: 2.0vw;  
+  font-weight: 600;
+  color: #42417E;
+  max-width: 25%;
+}
+
+.circlecommunication
+{
+  position: relative;
+  top: 70px;
+  left: 15%;
+}
+
+.principles .circlecommunicationdescription
+{
+  position: relative;
+  top: 90px;
+  left: 15%;
+  font-size: 2.0vw;  
+  font-weight: 600;
+  color: #42417E;
+  max-width: 25%;
+}
+
+.navbar {
+    background-color: #E1857E !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.btn-primary {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2
+}
+
+.btn-primary:hover {
+    color: #212529;
+    background-color: #52bebe;
+    border-color: #8ad3d3
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #212529;
+    background-color: #9cdada;
+    border-color: #2e7c7c
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-outline-primary {
+    color: #7cc;
+    background-color: transparent;
+    background-image: none;
+    border-color: #7cc
+}
+
+.btn-outline-primary:hover {
+    color: #222;
+    background-color: #8ad3d3;
+    border-color: #7cc
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #7cc;
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #212529;
+    background-color: #8ad3d3;
+    border-color: #7cc
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+}
