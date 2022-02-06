@@ -1,6 +1,5 @@
 # import torch
 # from transformers import T5ForConditionalGeneration, T5Tokenizer
-from logging import exception
 import os
 import requests
 
@@ -22,7 +21,7 @@ class friendly_JA():
         t_output = self.query({"inputs": f"{text}"})
         try:
             return t_output[0].get("generated_text")
-        except:
+        except KeyError:
             return ""
 
     # Exceeds heroku runtime memory
