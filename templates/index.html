@@ -22,9 +22,11 @@
             </a>
 
             <a class="navbar-brand" href="https://github.com/astremo">
-                <button type="button" class="btn btn-secondary">
+                <div class="github">
+                    <button type="button" class="btn btn-secondary">
                     <img src="{{ url_for('static', path='/resources/github.png') }}" width=20 alt="">GitHub</button>
-            </a>
+                </div>
+            </a> 
 
         </div>
     </nav>
@@ -52,7 +54,7 @@
 
         <form action="/translate" method="get"></form>
         <p>
-        <textarea rows="5" maxlength="256" class="form-control form-rounded"
+        <textarea maxlength="256" class="form-control form-rounded"
         id="translate">{{text_output}}</textarea>
         </p>
         <div class ="translatebtn">
@@ -88,14 +90,15 @@
 
         </div>
 
+        <div class="footer">
         <nav class="navbar navbar-light bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <h6>伝えるフレンドリー © 2022 astremo</h6>
                 </a>
-    
             </div>
         </nav>
+        </div>
         
 </body>
 

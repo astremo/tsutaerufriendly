@@ -24,6 +24,60 @@
     max-width: 25%;
 }
 
+@media only screen and (max-width: 1400px) {
+    .description {
+      display: none;
+    }
+    .circlemain {
+        display: none;
+    }
+    .what{
+        display: none;
+    }
+    .form {
+        height: 240px !important;
+        padding-bottom: 300px !important;
+    }
+    .translateform {
+        left:0px !important;
+        width: 100% !important;
+    }
+
+    .trytranslate{
+        left:10px !important;
+        
+    }
+
+    .textarea {
+        left:0px !important;
+    }
+
+    .translatebtn{
+        left: 10% !important;  
+        max-width: 100%;
+    }
+
+    .github{
+        display: none;
+    }
+
+    .diversepeople{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .principles{
+        height: 80vw !important;
+    }
+
+  }
+
+.github{
+    display:box;
+}
 
 .diversepeople
 {
@@ -37,9 +91,8 @@ textarea
     position: relative;
     top: 30px;
     left: 10%; 
-    font-size: 1.8vw !important; 
     max-width:80%;
-    max-height:40%;
+    height: 12em !important;
     resize: none !important;
     outline: none !important;
     box-shadow: none !important;
