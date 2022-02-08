@@ -22,7 +22,7 @@ class friendly_JA():
         try:
             return t_output[0].get("generated_text")
         except:
-            self.translate(self, text)
+            self.translate(text)
 
     # Exceeds heroku runtime memory
 
