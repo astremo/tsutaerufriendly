@@ -21,7 +21,7 @@ class friendly_JA():
         t_output = self.query({"inputs": f"{text}"})
         try:
             return t_output[0].get("generated_text")
-        except KeyError:
+        except:
             self.translate(self, text)
 
     # Exceeds heroku runtime memory
