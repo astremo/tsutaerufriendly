@@ -20,7 +20,7 @@ class friendly_JA():
     def translate(self, text:str):
         t_output = self.query({"inputs": f"{text}"})
         try:
-            if (t_output[0].get("generated_text") != "None"):
+            if (t_output[0].get("generated_text") is not None):
                 return t_output[0].get("generated_text")
             else:
                 self.translate(text)
