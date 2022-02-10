@@ -12,20 +12,21 @@ class friendly_JA():
 
     API_URL = "https://api-inference.huggingface.co/models/astremo/friendly_JA"
     headers = {"Authorization": f"Bearer {API_TOKEN}"}
+    t_output = []
 
     def query(self, payload):
         response = requests.post(self.API_URL, headers=self.headers, json=payload)
         return response.json()
 
+    def request_query(self, text:str):
+        self.t_output = self.query({"inputs": f"{text}"})
+        return self.t_output
+
     def translate(self, text:str):
-        t_output = self.query({"inputs": f"{text}"})
-        try:
-            if (t_output[0].get("generated_text") is not None):
-                return t_output[0].get("generated_text")
-            else:
-                self.translate(text)
-        except:
-            self.translate(text)
+        self.request_query(text)
+        while ("error" in self.t_output):
+            self.request_query(text)
+        return self.t_output[0].get("generated_text")
 
     # Exceeds heroku runtime memory
 
