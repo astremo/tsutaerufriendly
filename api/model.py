@@ -19,7 +19,7 @@ class friendly_JA():
         return response.json()
 
     def request_query(self, text:str):
-        self.t_output = self.query({"inputs": f"{text}"})
+        self.t_output = self.query({"inputs": f"{text}", "options":{"wait_for_model": True}, "parameters": {"max_length": 128}})
         return self.t_output
 
     def translate(self, text:str):
